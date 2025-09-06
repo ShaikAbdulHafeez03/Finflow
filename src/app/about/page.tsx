@@ -60,7 +60,7 @@ export default function AboutPage() {
             <div className="relative">
               <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 p-8 flex items-center justify-center">
                 <img
-                  src="/placeholder.svg?height=400&width=400&text=Team+Collaboration"
+                  src="./placeholder.svg?height=400&width=400&text=Team+Collaboration"
                   alt="Team collaboration and growth"
                   className="w-full h-full object-contain"
                 />

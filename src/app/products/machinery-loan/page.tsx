@@ -40,7 +40,7 @@ export default function MachineryLoanPage() {
                         <div className="relative">
                             <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 p-8 flex items-center justify-center">
                                 <img
-                                    src="/placeholder.svg?height=400&width=400&text=Industrial+Machinery"
+                                    src="./placeholder.svg?height=400&width=400&text=Industrial+Machinery"
                                     alt="Industrial machinery and equipment"
                                     className="w-full h-full object-contain"
                                 />
