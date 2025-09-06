@@ -4,6 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
+import Image from 'next/image' // Import the Image component
 
 export function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -15,8 +16,19 @@ export function Header() {
                     {/* Logo */}
                     <div className="flex items-center">
                         <Link href="/" className="flex items-center space-x-2">
-                            <div className="h-8 w-8 rounded bg-primary"></div>
-                            <span className="text-xl font-bold text-foreground">FinanceFlow</span>
+                            <div className="h-8 w-8 relative">
+                                <Image
+                                    src="/assets/finLogo.png"
+                                    alt="My Logo"
+                                    width={100} // Specify the width
+                                    height={100}
+                                    style={{ objectFit: 'contain' }}
+                                />
+                            </div>
+                            <div className="flex flex-col items-center m-0 p-0 ">
+                                <span className="text-indigo-900 text-xl font-bold leading-none">Jumbo</span>
+                                <span className="text-indigo-900 text-xl font-bold leading-none">Money</span>
+                            </div>
                         </Link>
                     </div>
 
