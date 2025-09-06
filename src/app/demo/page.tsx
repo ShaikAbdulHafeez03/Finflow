@@ -334,27 +334,6 @@ export default function DemoPage() {
 
                             {/* Calendar Placeholder & Info */}
                             <div className="space-y-8">
-                                {/* Calendar Integration Placeholder */}
-                                <Card>
-                                    <CardHeader>
-                                        <CardTitle className="flex items-center space-x-2">
-                                            <Calendar className="h-5 w-5" />
-                                            <span>Available Time Slots</span>
-                                        </CardTitle>
-                                        <CardDescription>Choose a convenient time for your personalized demo</CardDescription>
-                                    </CardHeader>
-                                    <CardContent>
-                                        <div className="aspect-square bg-muted rounded-lg flex items-center justify-center">
-                                            <div className="text-center">
-                                                <Calendar className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
-                                                <p className="text-muted-foreground">Calendar integration would appear here</p>
-                                                <p className="text-sm text-muted-foreground mt-2">(Calendly or similar booking system)</p>
-                                            </div>
-                                        </div>
-                                    </CardContent>
-                                </Card>
-
-                                {/* Demo Information */}
                                 <Card>
                                     <CardHeader>
                                         <CardTitle>Demo Details</CardTitle>
