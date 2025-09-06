@@ -344,7 +344,7 @@ export default function ContactPage() {
                         <p className="text-muted-foreground">Located in the heart of Mumbai's business district</p>
                     </div>
 
-                    <div className="max-w-4xl mx-auto">
+                    {/* <div className="max-w-4xl mx-auto">
                         <Card>
                             <CardContent className="p-0">
                                 <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
@@ -358,7 +358,7 @@ export default function ContactPage() {
                                 </div>
                             </CardContent>
                         </Card>
-                    </div>
+                    </div> */}
                 </div>
             </section>
 
