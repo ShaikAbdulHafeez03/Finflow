@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useState } from "react"
-import { collection, getDocs, query, orderBy } from "firebase/firestore"
+import { collection, getDocs, query, orderBy, deleteDoc, doc } from "firebase/firestore"
 import { db } from "@/lib/firebase"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -11,7 +11,8 @@ import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Badge } from "@/components/ui/badge"
-import { Calendar, Phone, Mail, Building, User, Clock, IndianRupee } from "lucide-react"
+import { Calendar, Phone, Mail, Building, User, Clock, IndianRupee, Trash, CheckCircle, AlertTriangle } from "lucide-react"
+import { useRouter } from "next/navigation";
 
 interface DemoData {
     id: string
@@ -43,16 +44,21 @@ export default function AdminPage() {
     const [demos, setDemos] = useState<DemoData[]>([])
     const [contacts, setContacts] = useState<ContactData[]>([])
     const [loading, setLoading] = useState(false)
+    const [successMessage, setSuccessMessage] = useState<string | null>(null);
+    const [errorMessage, setErrorMessage] = useState<string | null>(null);
+    const router = useRouter();
 
     // Simple hardcoded authentication (replace with proper auth in production)
     const handleLogin = (e: React.FormEvent) => {
         e.preventDefault()
-        if (username === "admin" && password === "financeflow2024") {
+        if (username === process.env.NEXT_PUBLIC_USERNAME && password === process.env.NEXT_PUBLIC_PASSWORD) {
             setIsLoggedIn(true)
             fetchData()
-            alert("Login Successful: Welcome to the admin dashboard")
+            setSuccessMessage("Login Successful: Welcome to the admin dashboard");
+            setErrorMessage(null);
         } else {
-            alert("Login Failed: Invalid username or password")
+            setErrorMessage("Login Failed: Invalid username or password");
+            setSuccessMessage(null);
         }
     }
 
@@ -78,7 +84,8 @@ export default function AdminPage() {
             setContacts(contactsData)
         } catch (error) {
             console.error("Error fetching data:", error)
-            alert("Failed to fetch data from Firebase")
+            setErrorMessage("Failed to fetch data from Firebase");
+            setSuccessMessage(null);
         } finally {
             setLoading(false)
         }
@@ -90,6 +97,9 @@ export default function AdminPage() {
         setPassword("")
         setDemos([])
         setContacts([])
+        setSuccessMessage(null);
+        setErrorMessage(null);
+        router.push('/admin');
     }
 
     const formatDate = (timestamp: any) => {
@@ -103,6 +113,33 @@ export default function AdminPage() {
             minute: "2-digit",
         })
     }
+
+    const handleDeleteDemo = async (id: string) => {
+        try {
+            await deleteDoc(doc(db, "demos", id));
+            setDemos(demos.filter((demo) => demo.id !== id));
+            setSuccessMessage("Demo request deleted successfully!");
+            setErrorMessage(null);
+        } catch (error) {
+            console.error("Error deleting demo:", error);
+            setErrorMessage("Failed to delete demo request.");
+            setSuccessMessage(null);
+        }
+    };
+
+    const handleDeleteContact = async (id: string) => {
+        try {
+            await deleteDoc(doc(db, "contacts", id));
+            setContacts(contacts.filter((contact) => contact.id !== id));
+            setSuccessMessage("Contact inquiry deleted successfully!");
+            setErrorMessage(null);
+        } catch (error) {
+            console.error("Error deleting contact:", error);
+            setErrorMessage("Failed to delete contact inquiry.");
+            setSuccessMessage(null);
+        }
+    };
+
 
     if (!isLoggedIn) {
         return (
@@ -225,6 +262,9 @@ export default function AdminPage() {
                                                     )}
                                                 </div>
                                             )}
+                                            <Button variant="destructive" size="sm" onClick={() => handleDeleteDemo(demo.id)}>
+                                                Delete <Trash className="ml-2 h-4 w-4" />
+                                            </Button>
                                         </CardContent>
                                     </Card>
                                 ))
@@ -273,6 +313,9 @@ export default function AdminPage() {
                                                 <h4 className="font-medium text-gray-900 mb-1">Message:</h4>
                                                 <p className="text-gray-700 bg-gray-50 p-3 rounded-md">{contact.message}</p>
                                             </div>
+                                            <Button variant="destructive" size="sm" onClick={() => handleDeleteContact(contact.id)}>
+                                                Delete <Trash className="ml-2 h-4 w-4" />
+                                            </Button>
                                         </CardContent>
                                     </Card>
                                 ))
