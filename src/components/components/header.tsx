@@ -57,7 +57,7 @@ export function Header() {
                             <Link href="/demo">Schedule a Demo</Link>
                         </Button>
                         <Button asChild>
-                            <Link href="/apply">Apply Now</Link>
+                            <Link href="/contact">Apply Now</Link>
                         </Button>
                     </div>
 
@@ -112,7 +112,7 @@ export function Header() {
                                     <Link href="/demo">Schedule a Demo</Link>
                                 </Button>
                                 <Button className="w-full" asChild>
-                                    <Link href="/apply">Apply Now</Link>
+                                    <Link href="/contact">Contact Now</Link>
                                 </Button>
                             </div>
                         </div>

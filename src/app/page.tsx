@@ -31,7 +31,7 @@ export default function HomePage() {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="text-lg px-8" asChild>
-                  <Link href="/apply">Apply Now</Link>
+                  <Link href="/contact">Contact Now</Link>
                 </Button>
                 <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent" asChild>
                   <Link href="/demo">Schedule a Demo</Link>

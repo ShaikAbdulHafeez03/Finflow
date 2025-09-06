@@ -29,7 +29,7 @@ export default function MachineryLoanPage() {
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <Button size="lg" className="text-lg px-8" asChild>
-                                    <Link href="/apply">Apply Now</Link>
+                                    <Link href="/contact">Apply Now</Link>
                                 </Button>
                                 <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent" asChild>
                                     <Link href="/calculators/emi">Calculate EMI</Link>
@@ -403,7 +403,7 @@ export default function MachineryLoanPage() {
                         </div>
                         <div className="flex flex-col sm:flex-row gap-4">
                             <Button size="lg" variant="secondary" className="text-lg px-8" asChild>
-                                <Link href="/apply">Apply Now</Link>
+                                <Link href="/contact">Apply Now</Link>
                             </Button>
                             <Button
                                 size="lg"
