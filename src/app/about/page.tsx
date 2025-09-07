@@ -22,7 +22,7 @@ export default function AboutPage() {
               Empowering <span className="text-primary">Indian MSMEs</span> to Achieve Their Dreams
             </h1>
             <p className="text-xl text-muted-foreground text-pretty leading-relaxed">
-              Founded with a mission to bridge the financing gap for Indian MSMEs, FinanceFlow has been a trusted
+              Founded with a mission to bridge the financing gap for Indian MSMEs, Jumbo Money has been a trusted
               partner in business growth since our inception.
             </p>
           </div>
@@ -95,7 +95,7 @@ export default function AboutPage() {
                       </div>
                     </div>
                     <p className="text-muted-foreground text-pretty leading-relaxed">
-                      FinanceFlow was founded by a team of financial services veterans who witnessed firsthand the
+                      Jumbo Money was founded by a team of financial services veterans who witnessed firsthand the
                       challenges faced by Indian MSMEs in accessing timely and affordable financing. Despite being the
                       backbone of India's economy, these businesses often struggled with lengthy approval processes,
                       rigid terms, and lack of understanding from traditional lenders.
@@ -367,7 +367,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold text-balance mb-4">Ready to Partner with Us?</h2>
           <p className="text-xl text-primary-foreground/80 text-pretty max-w-2xl mx-auto mb-8">
-            Join thousands of MSMEs who trust FinanceFlow for their financing needs. Let's grow together.
+            Join thousands of MSMEs who trust Jumbo Money for their financing needs. Let's grow together.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" className="text-lg px-8" asChild>

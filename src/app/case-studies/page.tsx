@@ -22,7 +22,7 @@ export default function CaseStudiesPage() {
               Real <span className="text-primary">Success Stories</span> from Our MSME Partners
             </h1>
             <p className="text-xl text-muted-foreground text-pretty leading-relaxed">
-              Discover how FinanceFlow has helped thousands of MSMEs across India grow their businesses with our
+              Discover how Jumbo Money has helped thousands of MSMEs across India grow their businesses with our
               tailored financing solutions.
             </p>
           </div>
@@ -94,7 +94,7 @@ export default function CaseStudiesPage() {
                       <div>
                         <h4 className="font-semibold text-lg mb-2">Our Solution</h4>
                         <p className="text-muted-foreground text-pretty">
-                          FinanceFlow provided a collateral-light Machinery Loan of ₹1.8 Crore for two new high-capacity
+                          Jumbo Money provided a collateral-light Machinery Loan of ₹1.8 Crore for two new high-capacity
                           injection moulding machines. The process, from application to disbursal, took only 4 working
                           days.
                         </p>
@@ -115,7 +115,7 @@ export default function CaseStudiesPage() {
                       </div>
 
                       <blockquote className="border-l-4 border-primary pl-4 italic text-muted-foreground">
-                        "Getting the loan from FinanceFlow was incredibly fast and straightforward. They understood our
+                        "Getting the loan from Jumbo Money was incredibly fast and straightforward. They understood our
                         urgent need to scale, and their flexible terms made all the difference."
                       </blockquote>
                       <div className="text-sm">
@@ -173,7 +173,7 @@ export default function CaseStudiesPage() {
                       <div>
                         <h4 className="font-semibold text-lg mb-2">Our Solution</h4>
                         <p className="text-muted-foreground text-pretty">
-                          FinanceFlow structured an Asset-Backed Machinery Loan of ₹4.5 Crore for 10 new automatic
+                          Jumbo Money structured an Asset-Backed Machinery Loan of ₹4.5 Crore for 10 new automatic
                           weaving machines. The loan was approved with a higher LTV, leveraging the value of the new
                           machinery itself and a partial existing property.
                         </p>
@@ -194,7 +194,7 @@ export default function CaseStudiesPage() {
                       </div>
 
                       <blockquote className="border-l-4 border-secondary pl-4 italic text-muted-foreground">
-                        "FinanceFlow didn't just offer a loan; they offered a partnership. Their team understood the
+                        "Jumbo Money didn't just offer a loan; they offered a partnership. Their team understood the
                         nuances of our business and structured a solution that allowed us to modernize without
                         liquidating assets."
                       </blockquote>
@@ -254,7 +254,7 @@ export default function CaseStudiesPage() {
                       <div>
                         <h4 className="font-semibold text-lg mb-2">Our Solution</h4>
                         <p className="text-muted-foreground text-pretty">
-                          FinanceFlow offered a tailored Machinery Loan of ₹90 Lakhs, focusing on the strong potential
+                          Jumbo Money offered a tailored Machinery Loan of ₹90 Lakhs, focusing on the strong potential
                           of their contract and the quality of the machinery. The application process was simplified for
                           MSMEs, with a focus on business viability.
                         </p>
@@ -271,7 +271,7 @@ export default function CaseStudiesPage() {
                       </div>
 
                       <blockquote className="border-l-4 border-accent pl-4 italic text-muted-foreground">
-                        "As a startup, securing a machinery loan felt daunting. FinanceFlow saw our vision and helped us
+                        "As a startup, securing a machinery loan felt daunting. Jumbo Money saw our vision and helped us
                         get the essential equipment we needed to kickstart our growth. Their support was instrumental."
                       </blockquote>
                       <div className="text-sm">

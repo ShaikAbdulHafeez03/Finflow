@@ -6,10 +6,9 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "FinanceFlow - Machinery Loans for Indian MSMEs",
+  title: "Jumbo Money - Machinery Loans for Indian MSMEs",
   description:
     "Fast, flexible machinery loans for Indian MSMEs. Get loans up to ₹10 Crore with quick decisions, clear terms, and predictable EMIs.",
-  generator: "v0.app",
   keywords: "machinery loans, MSME loans, business loans, equipment financing, India",
 }
 

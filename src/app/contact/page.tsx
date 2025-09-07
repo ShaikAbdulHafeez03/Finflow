@@ -111,7 +111,7 @@ export default function ContactPage() {
                                             <div>
                                                 <h3 className="font-semibold text-lg mb-2">Head Office</h3>
                                                 <p className="text-muted-foreground">
-                                                    FinanceFlow Technologies Pvt. Ltd.
+                                                    Jumbo Money Technologies Pvt. Ltd.
                                                     <br />
                                                     Tower A, 15th Floor
                                                     <br />
@@ -156,20 +156,20 @@ export default function ContactPage() {
                                                 <div className="space-y-1">
                                                     <p className="text-muted-foreground">
                                                         General Inquiries:{" "}
-                                                        <a href="mailto:info@financeflow.com" className="text-primary hover:underline">
-                                                            info@financeflow.com
+                                                        <a href="mailto:info@Jumbo Money.com" className="text-primary hover:underline">
+                                                            info@Jumbo Money.com
                                                         </a>
                                                     </p>
                                                     <p className="text-muted-foreground">
                                                         Loan Support:{" "}
-                                                        <a href="mailto:support@financeflow.com" className="text-primary hover:underline">
-                                                            support@financeflow.com
+                                                        <a href="mailto:support@Jumbo Money.com" className="text-primary hover:underline">
+                                                            support@Jumbo Money.com
                                                         </a>
                                                     </p>
                                                     <p className="text-muted-foreground">
                                                         Partnership:{" "}
-                                                        <a href="mailto:partners@financeflow.com" className="text-primary hover:underline">
-                                                            partners@financeflow.com
+                                                        <a href="mailto:partners@Jumbo Money.com" className="text-primary hover:underline">
+                                                            partners@Jumbo Money.com
                                                         </a>
                                                     </p>
                                                 </div>

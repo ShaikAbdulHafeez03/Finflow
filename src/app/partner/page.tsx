@@ -62,7 +62,7 @@ export default function GrievanceRedressalPage() {
                                             </div>
                                             <div className="flex items-center space-x-2">
                                                 <Mail className="h-4 w-4 text-muted-foreground" />
-                                                <span>support@financeflow.com</span>
+                                                <span>support@Jumbo Money.com</span>
                                             </div>
                                         </div>
                                     </div>
@@ -101,7 +101,7 @@ export default function GrievanceRedressalPage() {
                                             </div>
                                             <div className="flex items-center space-x-2">
                                                 <Mail className="h-4 w-4 text-muted-foreground" />
-                                                <span>grievance@financeflow.com</span>
+                                                <span>grievance@Jumbo Money.com</span>
                                             </div>
                                         </div>
                                     </div>
@@ -140,7 +140,7 @@ export default function GrievanceRedressalPage() {
                                             </div>
                                             <div className="flex items-center space-x-2">
                                                 <Mail className="h-4 w-4 text-muted-foreground" />
-                                                <span>principal@financeflow.com</span>
+                                                <span>principal@Jumbo Money.com</span>
                                             </div>
                                         </div>
                                     </div>
@@ -284,7 +284,7 @@ export default function GrievanceRedressalPage() {
                             variant="outline"
                             className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground hover:text-primary bg-transparent"
                         >
-                            Email: support@financeflow.com
+                            Email: support@Jumbo Money.com
                         </Button>
                     </div>
                 </div>

@@ -1,10 +1,25 @@
 import { Header } from "@/components/components/header"
 import { Footer } from "@/components/components/footer"
 import { Button } from "@/components/ui/button"
+import { FaTrain } from "react-icons/fa6";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { CheckCircle, Shield, TrendingUp, ArrowRight, Zap, Users, Award } from "lucide-react"
 import Link from "next/link"
+import { RiDrinksFill, RiScissors2Fill } from "react-icons/ri";
+import { FiPrinter } from "react-icons/fi";
+import { GiWoodAxe } from "react-icons/gi";
+import { FaBowlFood } from "react-icons/fa6";
+
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+import { title } from "process"
+import { PartnerWithUs } from "@/components/components/PartnerWithUs"
 
 export default function HomePage() {
   return (
@@ -12,7 +27,7 @@ export default function HomePage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-32 overflow-hidden">
+      <section className="relative py-10 lg:py-8 overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -72,12 +87,62 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      <section className="py-16 bg-muted/50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-balance mb-4">Industries Served</h2>
+            <p className="text-xl text-muted-foreground text-pretty">
+              We have worked with diverse MSMEs across India, providing tailored financing solutions for various industries.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
+            <Card className="text-center sm:h-10 md:h-10 lg:h-20 shadow-md p-4 flex flex-col">
+              <CardContent className="flex justify-center items-center space-x-4">
+                <FaTrain className="text-4xl text-primary" />
+                <div className="flex-item text-xl ">Machine Tools</div>
+              </CardContent>
+            </Card>
+            <Card className="text-center sm:h-10 md:h-10 lg:h-20 shadow-md p-4 flex flex-col">
+              <CardContent className="flex justify-center items-center space-x-4">
+                <RiDrinksFill className="text-4xl text-primary" />
+                <div className="flex-item text-xl">Plastic Industry</div>
+              </CardContent>
+            </Card>
+            <Card className="text-center sm:h-10 md:h-10 lg:h-20 shadow-md p-4 flex flex-col">
+              <CardContent className="flex justify-center items-center space-x-4">
+                <FiPrinter className="text-4xl text-primary" />
+                <div className="flex-item text-xl">Printing Industry</div>
+              </CardContent>
+            </Card>
+            <Card className="text-center sm:h-10 md:h-10 lg:h-20 shadow-md p-4 flex flex-col">
+              <CardContent className="flex justify-center items-center space-x-4">
+                <RiScissors2Fill className="text-4xl text-primary" />
+                <div className="flex-item text-xl">Textile Industry</div>
+              </CardContent>
+            </Card>
+            <Card className="text-center sm:h-10 md:h-10 lg:h-20 shadow-md p-4 flex flex-col">
+              <CardContent className="flex justify-center items-center space-x-4">
+                <GiWoodAxe className="text-4xl text-primary" />
+                <div className="flex-item text-xl">Wood Working</div>
+              </CardContent>
+            </Card>
+            <Card className="text-center sm:h-10 md:h-10 lg:h-20 shadow-md p-4 flex flex-col">
+              <CardContent className="flex justify-center items-center space-x-4">
+                <FaBowlFood  className="text-4xl text-primary" />
+                <div className="flex-item text-xl">Food Packaging</div>
+              </CardContent>
+            </Card>
+
+          </div>
+        </div>
+      </section>
 
       {/* Highlights Section */}
       <section className="py-16 bg-muted/50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-balance mb-4">Why Choose FinanceFlow?</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold text-balance mb-4">Why Choose Jumbo Money?</h2>
             <p className="text-xl text-muted-foreground text-pretty max-w-2xl mx-auto">
               We understand the unique needs of Indian MSMEs and provide tailored financing solutions.
             </p>
@@ -275,7 +340,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
+      <PartnerWithUs />
       {/* Testimonials */}
       <section className="py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -297,7 +362,7 @@ export default function HomePage() {
                   </div>
                 </div>
                 <blockquote className="text-muted-foreground mb-4 text-pretty">
-                  "FinanceFlow helped us expand our plastic manufacturing unit with a quick ₹2.5 Cr loan. The process
+                  "Jumbo Money helped us expand our plastic manufacturing unit with a quick ₹2.5 Cr loan. The process
                   was transparent and our production capacity increased by 40%."
                 </blockquote>
                 <div>
@@ -317,7 +382,7 @@ export default function HomePage() {
                   </div>
                 </div>
                 <blockquote className="text-muted-foreground mb-4 text-pretty">
-                  "As a textile manufacturer, getting the right financing was crucial. FinanceFlow's team understood our
+                  "As a textile manufacturer, getting the right financing was crucial. Jumbo Money's team understood our
                   needs and provided a structured solution that worked perfectly."
                 </blockquote>
                 <div>

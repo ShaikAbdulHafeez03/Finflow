@@ -1,5 +1,6 @@
 import Link from "next/link"
-import { Facebook, Twitter, Linkedin, Mail, Phone, MapPin } from "lucide-react"
+import { Mail, Phone, MapPin } from "lucide-react"
+import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 export function Footer() {
     return (
@@ -151,27 +152,27 @@ export function Footer() {
                             </div>
                             <div className="flex items-center space-x-2">
                                 <Mail className="h-4 w-4 text-muted-foreground" />
-                                <span className="text-sm text-muted-foreground">support@financeflow.com</span>
+                                <span className="text-sm text-muted-foreground">support@Jumbo Money.com</span>
                             </div>
                         </div>
 
                         {/* Social Media */}
                         <div className="flex space-x-4 mt-4">
                             <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                                <Facebook className="h-5 w-5" />
+                                <FaFacebook className="h-5 w-5" />
                             </Link>
                             <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                                <Twitter className="h-5 w-5" />
+                                <FaTwitter className="h-5 w-5" />
                             </Link>
                             <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                                <Linkedin className="h-5 w-5" />
+                                <FaLinkedin className="h-5 w-5" />
                             </Link>
                         </div>
                     </div>
                 </div>
 
                 <div className="border-t mt-8 pt-8 text-center">
-                    <p className="text-sm text-muted-foreground">© 2024 FinanceFlow. All rights reserved. | Regulated by RBI</p>
+                    <p className="text-sm text-muted-foreground">© 2024 JumboMoney. All rights reserved. | Regulated by RBI</p>
                 </div>
             </div>
         </footer>
