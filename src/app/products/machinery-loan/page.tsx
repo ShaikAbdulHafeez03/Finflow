@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { CheckCircle, Download, ArrowRight, Cog, Shield, Clock, TrendingUp } from "lucide-react"
 import Link from "next/link"
+import { ApplyNowButton } from "@/components/components/apply-now-button"
 
 export default function MachineryLoanPage() {
     return (
@@ -28,9 +29,7 @@ export default function MachineryLoanPage() {
                                 packaging equipment, we've got you covered.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
-                                <Button size="lg" className="text-lg px-8" asChild>
-                                    <Link href="/contact">Apply Now</Link>
-                                </Button>
+                                <ApplyNowButton size="lg" variant="outline" className="text-lg px-8 bg-transparent" children="Apply Now" />
                                 <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent" asChild>
                                     <Link href="/calculators/emi">Calculate EMI</Link>
                                 </Button>

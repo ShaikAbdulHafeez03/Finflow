@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 import Image from 'next/image' // Import the Image component
+import { ApplyNowButton } from "./apply-now-button"
 
 export function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -68,9 +69,7 @@ export function Header() {
                         <Button variant="outline" asChild>
                             <Link href="/demo">Schedule a Demo</Link>
                         </Button>
-                        <Button asChild>
-                            <Link href="/contact">Apply Now</Link>
-                        </Button>
+                        <ApplyNowButton variant="outline" children="Apply Now" />
                     </div>
 
                     {/* Mobile menu button */}

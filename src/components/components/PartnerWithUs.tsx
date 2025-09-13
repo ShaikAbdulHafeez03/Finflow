@@ -14,30 +14,29 @@ import Autoplay from "embla-carousel-autoplay"
 // Define the data structure for your images
 interface ImageData {
     src: string;
-    alt: string;
 }
 
 // Sample data for the images (replace with your actual data)
 const images: ImageData[] = [
-    { src: "/assets/partners/WhatsApp Image 2025-09-07 at 12.57.49_3fbf2a11 - Copy.jpg", alt: "Partner 1" },
-    { src: "/assets/partners/WhatsApp Image 2025-09-07 at 12.57.49_3fbf2a11.jpg", alt: "Partner 2" },
-    { src: "/assets/partners/WhatsApp Image 2025-09-07 at 12.57.49_5c724334 - Copy.jpg", alt: "Partner 3" },
-    { src: "/assets/partners/WhatsApp Image 2025-09-07 at 12.57.49_5c724334.jpg", alt: "Partner 4" },
-    { src: "/assets/partners/WhatsApp Image 2025-09-07 at 12.57.50_0cec26e1.jpg", alt: "Partner 5" },
-    { src: "/assets/partners/WhatsApp Image 2025-09-07 at 12.57.50_1f93b826.jpg", alt: "Partner 6" },
-    { src: "/assets/partners/WhatsApp Image 2025-09-07 at 12.57.50_45866f5d.jpg", alt: "Partner 7" },
-    { src: "/assets/partners/WhatsApp Image 2025-09-07 at 12.57.50_46afeee8.jpg", alt: "Partner 8" },
-    { src: "/assets/partners/WhatsApp Image 2025-09-07 at 12.57.50_568af89e.jpg", alt: "Partner 9" },
-    { src: "/assets/partners/WhatsApp Image 2025-09-07 at 12.57.50_ad3bc6b9.jpg", alt: "Partner 10" },
-    { src: "/assets/partners/WhatsApp Image 2025-09-07 at 12.57.50_bc176a15.jpg", alt: "Partner 11" },
-    { src: "/assets/partners/WhatsApp Image 2025-09-07 at 12.57.50_bc673ff3.jpg", alt: "Partner 12" },
-    { src: "/assets/partners/WhatsApp Image 2025-09-07 at 12.57.50_be924f03.jpg", alt: "Partner 13" },
-    { src: "/assets/partners/WhatsApp Image 2025-09-07 at 12.57.50_cd0a2e28.jpg", alt: "Partner 14" },
-    { src: "/assets/partners/WhatsApp Image 2025-09-07 at 12.57.50_d31f2dbb.jpg", alt: "Partner 15" },
-    { src: "/assets/partners/WhatsApp Image 2025-09-07 at 12.57.50_f8e53d56.jpg", alt: "Partner 16" },
-    { src: "/assets/partners/WhatsApp Image 2025-09-07 at 12.57.53_55c8004f.jpg", alt: "Partner 17" },
-    { src: "/assets/partners/WhatsApp Image 2025-09-07 at 12.57.55_2673aae1.jpg", alt: "Partner 18" },
-    { src: "/assets/partners/WhatsApp Image 2025-09-07 at 12.57.55_8232204f.jpg", alt: "Partner 19" },
+    { src: "/assets/partners/ACE.jpg" },
+    { src: "/assets/partners/amada.png" },
+    { src: "/assets/partners/BFW.png" },
+    { src: "/assets/partners/DMG.png" },
+    { src: "/assets/partners/doosan.jpg" },
+    { src: "/assets/partners/download.jpg" },
+    { src: "/assets/partners/Electronica logo.jpg" },
+    { src: "/assets/partners/fanuc.jpg" },
+    { src: "/assets/partners/husky.png" },
+    { src: "/assets/partners/hyu.png" },
+    { src: "/assets/partners/images.png" },
+    { src: "/assets/partners/jyoti.jpg" },
+    { src: "/assets/partners/LMW.png" },
+    { src: "/assets/partners/logo-mcs.png" },
+    { src: "/assets/partners/makino.jpg" },
+    { src: "/assets/partners/mazak.jpg" },
+    { src: "/assets/partners/mitsu.jpg" },
+    { src: "/assets/partners/mitsu.png" },
+    { src: "/assets/partners/trumpf.png" },
 ];
 
 export function PartnerWithUs() {
@@ -54,7 +53,7 @@ export function PartnerWithUs() {
                 <Carousel
                     plugins={[
                         Autoplay({
-                            delay: 1300,
+                            delay: 700,
                         }),
                     ]}
                     opts={{
@@ -89,14 +88,14 @@ export function PartnerWithUs() {
                 >
                     <CarouselContent>
                         {images.map((image, index) => (
-                            <CarouselItem key={index} className="basis-1/6">
+                            <CarouselItem key={index} className=" basis-1/3 lg:basis-1/6 sm:basis-1/3">
                                 <div className="p-0">
                                     <Card>
-                                        <CardContent className="flex items-center justify-center p-0">
+                                        <CardContent className="flex items-center justify-center p-0 ">
                                             <div style={{ width: '100%', height: '60px', position: 'relative' }}>
                                                 <Image
                                                     src={image.src}
-                                                    alt={image.alt}
+                                                    alt="{image.alt}"
                                                     layout="fill" // Make the image fill the container
                                                     objectFit="contain" // Maintain aspect ratio and fit within the container
                                                     style={{ objectPosition: 'center' }} // Center the image

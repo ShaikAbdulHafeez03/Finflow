@@ -11,14 +11,6 @@ import { FiPrinter } from "react-icons/fi";
 import { GiWoodAxe } from "react-icons/gi";
 import { FaBowlFood } from "react-icons/fa6";
 
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
-import { title } from "process"
 import { PartnerWithUs } from "@/components/components/PartnerWithUs"
 
 export default function HomePage() {
@@ -129,7 +121,7 @@ export default function HomePage() {
             </Card>
             <Card className="text-center sm:h-10 md:h-10 lg:h-20 shadow-md p-4 flex flex-col">
               <CardContent className="flex justify-center items-center space-x-4">
-                <FaBowlFood  className="text-4xl text-primary" />
+                <FaBowlFood className="text-4xl text-primary" />
                 <div className="flex-item text-xl">Food Packaging</div>
               </CardContent>
             </Card>
