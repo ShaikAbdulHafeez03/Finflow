@@ -69,7 +69,7 @@ export function Header() {
                         <Button variant="outline" asChild>
                             <Link href="/demo">Schedule a Demo</Link>
                         </Button>
-                        <ApplyNowButton variant="outline" children="Apply Now" />
+                        <ApplyNowButton variant="outline" />
                     </div>
 
                     {/* Mobile menu button */}

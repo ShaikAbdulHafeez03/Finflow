@@ -29,7 +29,7 @@ export default function MachineryLoanPage() {
                                 packaging equipment, we've got you covered.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
-                                <ApplyNowButton size="lg" variant="outline" className="text-lg px-8 bg-transparent" children="Apply Now" />
+                                <ApplyNowButton size="lg" variant="outline" className="text-lg px-8 bg-transparent"/>
                                 <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent" asChild>
                                     <Link href="/calculators/emi">Calculate EMI</Link>
                                 </Button>

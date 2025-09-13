@@ -107,9 +107,6 @@ export function PartnerWithUs() {
                             </CarouselItem>
                         ))}
                     </CarouselContent>
-                    {/* Optional navigation controls */}
-                    {/* <CarouselPrevious />
-          <CarouselNext /> */}
                 </Carousel>
             </div>
         </section>
