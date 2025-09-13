@@ -122,9 +122,7 @@ export function Header() {
                                 <Button variant="outline" className="w-full bg-transparent" asChild>
                                     <Link href="/demo">Schedule a Demo</Link>
                                 </Button>
-                                <Button className="w-full" asChild>
-                                    <Link href="/contact">Contact Now</Link>
-                                </Button>
+                                <ApplyNowButton variant="outline" className="w-full bg-transparent" />
                             </div>
                         </div>
                     </div>

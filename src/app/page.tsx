@@ -12,6 +12,7 @@ import { GiWoodAxe } from "react-icons/gi";
 import { FaBowlFood } from "react-icons/fa6";
 
 import { PartnerWithUs } from "@/components/components/PartnerWithUs"
+import { ApplyNowButton } from "@/components/components/apply-now-button";
 
 export default function HomePage() {
   return (
@@ -37,9 +38,7 @@ export default function HomePage() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="text-lg px-8" asChild>
-                  <Link href="/contact">Contact Now</Link>
-                </Button>
+                <ApplyNowButton />
                 <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent" asChild>
                   <Link href="/demo">Schedule a Demo</Link>
                 </Button>
@@ -415,9 +414,7 @@ export default function HomePage() {
             Join thousands of MSMEs who have successfully expanded their operations with our machinery loans.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" className="text-lg px-8" asChild>
-              <Link href="/contact">Contact Now</Link>
-            </Button>
+            <ApplyNowButton />
             <Button
               size="lg"
               variant="outline"
