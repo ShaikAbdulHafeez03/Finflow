@@ -337,8 +337,8 @@ export function LoanApplicationModal() {
                                                 <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm mb-4">
                                                     <div className="flex items-center gap-1.5"><Badge variant="outline">LTV CAT</Badge><span className="font-semibold">{offer.LMV_cat || 'N/A'}</span></div>
                                                     <div className="flex items-center gap-1.5"><Badge variant="outline">Advance</Badge><span className="font-semibold">{offer.advance || 'N/A'}</span></div>
-                                                    <div className="flex items-center gap-1.5"><Badge variant="outline">ROI</Badge><span className="font-semibold">{offer.minRoi || '...'} - {offer.maxRoi || '...'}</span></div>
-                                                    <div className="flex items-center gap-1.5"><Badge variant="outline">Tenure</Badge><span className="font-semibold">{offer.minTenure || '...'} - {offer.maxTenure || '...'}</span></div>
+                                                    <div className="flex items-center gap-1.5"><Badge variant="outline">ROI</Badge><span className="font-semibold">{`${offer.minRoi}%` || '...'} - {`${offer.maxRoi}%` || '...'}</span></div>
+                                                    <div className="flex items-center gap-1.5"><Badge variant="outline">Tenure</Badge><span className="font-semibold">{`${offer.minTenure}` || '...'} - {`${offer.maxTenure} Months` || '...'}</span></div>
                                                 </div>
                                             </CardContent>
                                             <div className="bg-muted p-4 space-y-3">
